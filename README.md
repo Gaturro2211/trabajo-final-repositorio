@@ -9,6 +9,9 @@ Repositorio con los scripts y resultados del análisis de la sección "Eleccione
 * `/data`: Archivos CSV generados (inicializado con .gitkeep).
 * `/docs`: Visualización web del análisis final.
 
+Link Carpeta data: https://github.com/Gaturro2211/TRABAJO-FINAL-/tree/565c3a6b0b0e746d55ac1be5bf0052f60d255850/data
+Link Carpeta code:https://github.com/Gaturro2211/trabajo-final-repositorio/tree/main/code
+
 ## 🚀 Metodología
 1. **Extracción:** [src_scrape_elecciones.py] obtiene los titulares actuales.
 2. **Procesamiento:** [src_process_elecciones.py] limpia los datos y clasifica temas.
