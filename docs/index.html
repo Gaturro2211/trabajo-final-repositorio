@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Análisis Electoral 2026 - La República</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; background: #f4f4f9; margin: 0; padding: 40px; color: #333; }
+    .container { max-width: 900px; margin: auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    h1 { color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; }
+    h2 { margin-top: 30px; color: #1976d2; }
+    ul { line-height: 1.8; }
+    a { color: #1976d2; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; text-align: left; }
+    th { background: #e3f2fd; }
+    .note { background: #fff3e0; padding: 15px; border-left: 4px solid #ff9800; margin-top: 20px; font-size: 0.9em; }
+    .badge-neg { background: #ffebee; color: #c62828; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Análisis de Portadas: Elecciones Perú 2026</h1>
+    <p>Este proyecto analiza la agenda informativa de la sección "Elecciones" de <b>La República</b> mediante web scraping y procesamiento de lenguaje natural.</p>
+
+    <h2>Scripts de Procesamiento (Carpeta /code)</h2>
+    <ul>
+      <li><a href="https://github.com/Gaturro2211/trabajo-final-repositorio/blob/main/code/src_scrape_elecciones.py">Extracción de datos (Scraper)</a></li>
+      <li><a href="https://github.com/Gaturro2211/trabajo-final-repositorio/blob/main/code/src_process_elecciones.py">Limpieza y Tokenización</a></li>
+    </ul>
+
+    <h2>Descarga de Datos Extraídos (Carpeta /data)</h2>
+    <ul>
+      <li><a href="https://github.com/Gaturro2211/trabajo-final-repositorio/raw/main/data/titulares_elecciones_raw.csv">Datos Crudos (.csv)</a></li>
+      <li><a href="https://github.com/Gaturro2211/trabajo-final-repositorio/raw/main/data/titulares_con_sentimiento.csv">Análisis de Sentimiento (.csv)</a></li>
+      <li><a href="https://github.com/Gaturro2211/trabajo-final-repositorio/raw/main/data/top_palabras_elecciones.csv">Frecuencia de Palabras (.csv)</a></li>
+    </ul>
+
+    <div class="note">
+      <b>Instrucciones de descarga:</b> Clic derecho en el enlace y seleccionar "Guardar enlace como..." para obtener los archivos CSV.
+    </div>
+
+    <h2>Hallazgos: Top 5 Palabras Clave</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Palabra</th>
+          <th>Frecuencia</th>
+          <th>Contexto Detectado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Perú</td><td>5</td><td>Ámbito nacional</td></tr>
+        <tr><td>Electoral</td><td>4</td><td>Enfoque institucional</td></tr>
+        <tr><td>Carrera</td><td>3</td><td>Competencia política</td></tr>
+        <tr><td>JNE / JEE</td><td>2</td><td>Fiscalización legal</td></tr>
+        <tr><td>Falso / Impreciso</td><td>2</td><td>Fact-checking (PerúCheck)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
